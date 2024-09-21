@@ -1,13 +1,24 @@
 [![Compile Sketch ESP32](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml)
-# ESP32XIAO-GitHub-Action
 
-### Commands with Arduino-CLI
+# ESP32XIAO-GitHub-Action
+Eine kurze Einführung mit Arduino und ESP32 Codes.  Wir verwenden dafür vordefinierte Aktionen, die das Kompilieren von Sketches ermöglichen und wie du deine CI/CD-Pipeline so einrichtest, 
+dass deine Arduino- und ESP32-Codes automatisch überprüft werden
+
+## Commands with Arduino-CLI
 - arduino-cli list all
 - arduino-cli lib install "Adafruit GFX Library"
 - arduino-cli lib install "Adafruit SSD1306"
 - arduino-cli compile --fqbn esp32:esp32:XIAO_ESP32C3 .
 - arduino-cli upload -p /dev/ttyACM0 --fqbn esp32:esp32:XIAO_ESP32C3 .
 
+## Videos
+Playlist: https://www.youtube.com/playlist?list=PLluslK6uBf4tOir-zkFXTTtdfZk6BK0MW
+
+## Alle Repos zur Serie
+- https://github.com/pixelEDI/GitHubAction_ArduinoR4
+- https://github.com/pixelEDI/GitHubAction_ESP32XIAO
+- https://github.com/pixelEDI/GiteaAction_ArduinoR4
+- https://github.com/pixelEDI/GIiteaAciton_pio_ESP32XIAO
 
 
 ```mermaid

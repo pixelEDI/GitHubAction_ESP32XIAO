@@ -1,5 +1,4 @@
 [![Compile Sketch ESP32](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml)
-
 # ESP32XIAO-GitHub-Action
 
 ### Commands with Arduino-CLI

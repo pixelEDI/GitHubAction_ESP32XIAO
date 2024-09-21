@@ -2,10 +2,16 @@ name: Compile Sketch ESP32
 
 on:
   - push
-
 jobs:
   compile-sketch:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        fqbn:
+          - esp32:esp32:XIAO_ESP32C3
+          - esp32:esp32:XIAO_ESP32S3
+          - esp32:esp32:XIAO_ESP32C6
 
     steps:
       # This step makes the contents of the repository available to the workflow
@@ -15,11 +21,12 @@ jobs:
       - name: Compile sketch esp32
         uses: arduino/compile-sketches@v1.1.2
         with:
-          fqbn: esp32:esp32:XIAO_ESP32C3
+          fqbn: ${{ matrix.fqbn }}
           platforms: |
             - name: esp32:esp32
               source-url: https://dl.espressif.com/dl/package_esp32_index.json
           sketch-paths: |
             - ./
           libraries: |
-           -
+            - name: "Adafruit GFX Library"
+            - name: "Adafruit SSD1306"

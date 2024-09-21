@@ -1,4 +1,4 @@
-[![Compile Sketch](https://github.com/pixelEDI/ESP32XIAO-GitHub-Action/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/pixelEDI/ESP32XIAO-GitHub-Action/actions/workflows/compile-sketch.yaml)
+[![Compile Sketch](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/pixelEDI/GitHubAction_ESP32XIAO/actions/workflows/compile-sketch.yaml)
 
 # ESP32XIAO-GitHub-Action
 
